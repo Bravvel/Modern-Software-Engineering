@@ -56,7 +56,7 @@ def get_dogs():
     return [dogs_db[dog] for dog in dogs_db]
 
 
-@app.get('/dog/{kind}')
+@app.get('/dogs/{kind}')
 def get_dogs_by_kind(kind: str):
     return [dogs_db[dog] for dog in dogs_db if dogs_db[dog].kind == kind]
 
